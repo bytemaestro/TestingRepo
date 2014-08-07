@@ -1,0 +1,6 @@
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\bin\Release\Grosvenor.Practicum.GrovsnerDiner.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\bin\Release\Grosvenor.Practicum.GrovsnerDiner.pdb
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\bin\Release\Ninject.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\bin\Release\Ninject.xml
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\obj\Release\Grosvenor.Practicum.GrovsnerDiner.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\obj\Release\Grosvenor.Practicum.GrovsnerDiner.pdb

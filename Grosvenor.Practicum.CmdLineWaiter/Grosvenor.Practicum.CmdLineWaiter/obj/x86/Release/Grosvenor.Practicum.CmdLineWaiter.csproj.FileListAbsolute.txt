@@ -1,0 +1,7 @@
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.CmdLineWaiter\bin\x86\Release\CmdLineWaiter.exe.config
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.CmdLineWaiter\bin\x86\Release\CmdLineWaiter.exe
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.CmdLineWaiter\bin\x86\Release\Grosvenor.Practicum.GrovsnerDiner.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.CmdLineWaiter\bin\x86\Release\Ninject.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.CmdLineWaiter\bin\x86\Release\Ninject.xml
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.CmdLineWaiter\obj\x86\Release\Grosvenor.Practicum.CmdLineWaiter.csprojResolveAssemblyReference.cache
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.CmdLineWaiter\obj\x86\Release\CmdLineWaiter.exe

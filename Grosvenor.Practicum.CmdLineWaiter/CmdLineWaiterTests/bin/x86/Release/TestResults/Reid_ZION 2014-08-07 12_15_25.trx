@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9b66152a-4842-49fe-b69a-b8fb897e40cf" name="Reid@ZION 2014-08-07 12:15:25" runUser="ZION\Reid" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="054650ad-5403-4401-ad5d-1884bb9c4124">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Reid_ZION 2014-08-07 12_15_25" />
+  </TestSettings>
+  <Times creation="2014-08-07T12:15:25.5441349-05:00" queuing="2014-08-07T12:15:25.8841592-05:00" start="2014-08-07T12:15:25.9291555-05:00" finish="2014-08-07T12:15:26.8442085-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="12" executed="12" passed="12" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestOrderServingPositions" storage="cmdlinewaitertests.dll" id="93f4e158-5682-9729-be6c-af61314b31fb">
+      <Execution id="9c5d8819-7199-4cd6-92e0-cfa045cf8ef5" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.FoodServerTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestOrderServingPositions" />
+    </UnitTest>
+    <UnitTest name="TestMultiPotatoDinnerCrazyOrder" storage="cmdlinewaitertests.dll" id="4a2048a1-121f-3c73-79a6-12ad8f39d9a6">
+      <Execution id="01a8dbb7-8585-4782-925e-04c5eed97de3" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.FoodServerTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMultiPotatoDinnerCrazyOrder" />
+    </UnitTest>
+    <UnitTest name="TestDesertOrderForBreakfast" storage="cmdlinewaitertests.dll" id="7fc02348-89a1-e1bf-0d93-dceb7517c4b2">
+      <Execution id="edc7d20b-f1b6-4fbc-a4f2-e3d0c1c4a779" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.FoodServerTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDesertOrderForBreakfast" />
+    </UnitTest>
+    <UnitTest name="TestCreatingFullBreakfastOrder" storage="cmdlinewaitertests.dll" id="7fffa4e3-68b2-4b06-63b0-b242666e4044">
+      <Execution id="83737798-2d73-4989-ac12-12a4499b0108" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.FoodServerTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreatingFullBreakfastOrder" />
+    </UnitTest>
+    <UnitTest name="TestFullDinnerOrder" storage="cmdlinewaitertests.dll" id="33b0e076-6a59-4ef6-6f92-5ddbe0d15043">
+      <Execution id="6575bbf2-8007-4a1c-af91-bb56ab7be1f3" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.FoodServerTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFullDinnerOrder" />
+    </UnitTest>
+    <UnitTest name="TestDishesServingTimeAndPositionAreUnique" storage="cmdlinewaitertests.dll" id="98d924ae-333f-e022-784a-a696e64a9928">
+      <Execution id="0d633686-53ac-4bed-ae2c-1477b1cc050d" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.DinerServiceTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDishesServingTimeAndPositionAreUnique" />
+    </UnitTest>
+    <UnitTest name="TestCreatingDoubleCoffeeOrder" storage="cmdlinewaitertests.dll" id="09847520-6350-4d63-7296-cdd66a77d0b7">
+      <Execution id="ba7039e0-b2d4-4159-a94e-4812e4ef5428" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.FoodServerTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreatingDoubleCoffeeOrder" />
+    </UnitTest>
+    <UnitTest name="TestDinerServiceSetup" storage="cmdlinewaitertests.dll" id="5a3ad648-e8e7-fb9b-6e30-f0d81035eade">
+      <Execution id="94964972-64bd-4af5-bf72-1412d4192579" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.DinerServiceTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDinerServiceSetup" />
+    </UnitTest>
+    <UnitTest name="TestGettingDinnerDishes" storage="cmdlinewaitertests.dll" id="638f7476-81d8-8c10-b0fc-2988613d5bdb">
+      <Execution id="e511ccd0-8a0d-4804-ae0e-b8c8a5b5f0f9" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.DinerServiceTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestGettingDinnerDishes" />
+    </UnitTest>
+    <UnitTest name="TestMultiPotatoDinnerOrder" storage="cmdlinewaitertests.dll" id="906f474b-7f25-f6f3-fd65-a03f962f5bcb">
+      <Execution id="30fce9a0-eba4-413c-95bd-515757dbeca3" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.FoodServerTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMultiPotatoDinnerOrder" />
+    </UnitTest>
+    <UnitTest name="TestGettingBreakfastDishes" storage="cmdlinewaitertests.dll" id="5333cfcc-1ae6-e9d4-caa3-03e26388dad3">
+      <Execution id="35554613-ef8e-421e-8c19-2e557ba9ba6e" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.DinerServiceTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestGettingBreakfastDishes" />
+    </UnitTest>
+    <UnitTest name="TestCreatingAnOrder" storage="cmdlinewaitertests.dll" id="d007b9c8-5507-bdf1-8608-774e5695f47c">
+      <Execution id="a4535958-92f8-4ec0-9fca-09ef1c396526" />
+      <TestMethod codeBase="C:/Dev/Projects/GIT/TestingRepo/Grosvenor.Practicum.CmdLineWaiter/CmdLineWaiterTests/bin/x86/Release/cmdlinewaitertests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CmdLineWaiterTests.FoodServerTester, CmdLineWaiterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreatingAnOrder" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5a3ad648-e8e7-fb9b-6e30-f0d81035eade" executionId="94964972-64bd-4af5-bf72-1412d4192579" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="98d924ae-333f-e022-784a-a696e64a9928" executionId="0d633686-53ac-4bed-ae2c-1477b1cc050d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5333cfcc-1ae6-e9d4-caa3-03e26388dad3" executionId="35554613-ef8e-421e-8c19-2e557ba9ba6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="638f7476-81d8-8c10-b0fc-2988613d5bdb" executionId="e511ccd0-8a0d-4804-ae0e-b8c8a5b5f0f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d007b9c8-5507-bdf1-8608-774e5695f47c" executionId="a4535958-92f8-4ec0-9fca-09ef1c396526" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09847520-6350-4d63-7296-cdd66a77d0b7" executionId="ba7039e0-b2d4-4159-a94e-4812e4ef5428" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fffa4e3-68b2-4b06-63b0-b242666e4044" executionId="83737798-2d73-4989-ac12-12a4499b0108" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fc02348-89a1-e1bf-0d93-dceb7517c4b2" executionId="edc7d20b-f1b6-4fbc-a4f2-e3d0c1c4a779" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33b0e076-6a59-4ef6-6f92-5ddbe0d15043" executionId="6575bbf2-8007-4a1c-af91-bb56ab7be1f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a2048a1-121f-3c73-79a6-12ad8f39d9a6" executionId="01a8dbb7-8585-4782-925e-04c5eed97de3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="906f474b-7f25-f6f3-fd65-a03f962f5bcb" executionId="30fce9a0-eba4-413c-95bd-515757dbeca3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93f4e158-5682-9729-be6c-af61314b31fb" executionId="9c5d8819-7199-4cd6-92e0-cfa045cf8ef5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="94964972-64bd-4af5-bf72-1412d4192579" testId="5a3ad648-e8e7-fb9b-6e30-f0d81035eade" testName="TestDinerServiceSetup" computerName="ZION" duration="00:00:00.3550961" startTime="2014-08-07T12:15:25.9391621-05:00" endTime="2014-08-07T12:15:26.6502032-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94964972-64bd-4af5-bf72-1412d4192579">
+    </UnitTestResult>
+    <UnitTestResult executionId="0d633686-53ac-4bed-ae2c-1477b1cc050d" testId="98d924ae-333f-e022-784a-a696e64a9928" testName="TestDishesServingTimeAndPositionAreUnique" computerName="ZION" duration="00:00:00.0420596" startTime="2014-08-07T12:15:26.6531976-05:00" endTime="2014-08-07T12:15:26.6982003-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d633686-53ac-4bed-ae2c-1477b1cc050d">
+    </UnitTestResult>
+    <UnitTestResult executionId="35554613-ef8e-421e-8c19-2e557ba9ba6e" testId="5333cfcc-1ae6-e9d4-caa3-03e26388dad3" testName="TestGettingBreakfastDishes" computerName="ZION" duration="00:00:00.0037712" startTime="2014-08-07T12:15:26.7002014-05:00" endTime="2014-08-07T12:15:26.7062015-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35554613-ef8e-421e-8c19-2e557ba9ba6e">
+    </UnitTestResult>
+    <UnitTestResult executionId="e511ccd0-8a0d-4804-ae0e-b8c8a5b5f0f9" testId="638f7476-81d8-8c10-b0fc-2988613d5bdb" testName="TestGettingDinnerDishes" computerName="ZION" duration="00:00:00.0036774" startTime="2014-08-07T12:15:26.7092013-05:00" endTime="2014-08-07T12:15:26.7152063-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e511ccd0-8a0d-4804-ae0e-b8c8a5b5f0f9">
+    </UnitTestResult>
+    <UnitTestResult executionId="a4535958-92f8-4ec0-9fca-09ef1c396526" testId="d007b9c8-5507-bdf1-8608-774e5695f47c" testName="TestCreatingAnOrder" computerName="ZION" duration="00:00:00.0119655" startTime="2014-08-07T12:15:26.7172020-05:00" endTime="2014-08-07T12:15:26.7332077-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4535958-92f8-4ec0-9fca-09ef1c396526">
+    </UnitTestResult>
+    <UnitTestResult executionId="ba7039e0-b2d4-4159-a94e-4812e4ef5428" testId="09847520-6350-4d63-7296-cdd66a77d0b7" testName="TestCreatingDoubleCoffeeOrder" computerName="ZION" duration="00:00:00.0172260" startTime="2014-08-07T12:15:26.7362046-05:00" endTime="2014-08-07T12:15:26.7572087-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba7039e0-b2d4-4159-a94e-4812e4ef5428">
+    </UnitTestResult>
+    <UnitTestResult executionId="83737798-2d73-4989-ac12-12a4499b0108" testId="7fffa4e3-68b2-4b06-63b0-b242666e4044" testName="TestCreatingFullBreakfastOrder" computerName="ZION" duration="00:00:00.0051240" startTime="2014-08-07T12:15:26.7582036-05:00" endTime="2014-08-07T12:15:26.7662043-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83737798-2d73-4989-ac12-12a4499b0108">
+    </UnitTestResult>
+    <UnitTestResult executionId="edc7d20b-f1b6-4fbc-a4f2-e3d0c1c4a779" testId="7fc02348-89a1-e1bf-0d93-dceb7517c4b2" testName="TestDesertOrderForBreakfast" computerName="ZION" duration="00:00:00.0042929" startTime="2014-08-07T12:15:26.7702059-05:00" endTime="2014-08-07T12:15:26.7782109-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edc7d20b-f1b6-4fbc-a4f2-e3d0c1c4a779">
+    </UnitTestResult>
+    <UnitTestResult executionId="6575bbf2-8007-4a1c-af91-bb56ab7be1f3" testId="33b0e076-6a59-4ef6-6f92-5ddbe0d15043" testName="TestFullDinnerOrder" computerName="ZION" duration="00:00:00.0052663" startTime="2014-08-07T12:15:26.7802056-05:00" endTime="2014-08-07T12:15:26.7882121-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6575bbf2-8007-4a1c-af91-bb56ab7be1f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="01a8dbb7-8585-4782-925e-04c5eed97de3" testId="4a2048a1-121f-3c73-79a6-12ad8f39d9a6" testName="TestMultiPotatoDinnerCrazyOrder" computerName="ZION" duration="00:00:00.0044567" startTime="2014-08-07T12:15:26.7912066-05:00" endTime="2014-08-07T12:15:26.7982114-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01a8dbb7-8585-4782-925e-04c5eed97de3">
+    </UnitTestResult>
+    <UnitTestResult executionId="30fce9a0-eba4-413c-95bd-515757dbeca3" testId="906f474b-7f25-f6f3-fd65-a03f962f5bcb" testName="TestMultiPotatoDinnerOrder" computerName="ZION" duration="00:00:00.0056090" startTime="2014-08-07T12:15:26.8012102-05:00" endTime="2014-08-07T12:15:26.8102121-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30fce9a0-eba4-413c-95bd-515757dbeca3">
+    </UnitTestResult>
+    <UnitTestResult executionId="9c5d8819-7199-4cd6-92e0-cfa045cf8ef5" testId="93f4e158-5682-9729-be6c-af61314b31fb" testName="TestOrderServingPositions" computerName="ZION" duration="00:00:00.0044655" startTime="2014-08-07T12:15:26.8122068-05:00" endTime="2014-08-07T12:15:26.8192092-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c5d8819-7199-4cd6-92e0-cfa045cf8ef5">
+    </UnitTestResult>
+  </Results>
+</TestRun>

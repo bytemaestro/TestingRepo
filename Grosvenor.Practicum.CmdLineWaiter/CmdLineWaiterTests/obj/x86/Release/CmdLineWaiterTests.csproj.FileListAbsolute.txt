@@ -1,0 +1,16 @@
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\CmdLineWaiterTests.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\CmdLineWaiterTests.pdb
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\CmdLineWaiter.exe
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Grosvenor.Practicum.GrovsnerDiner.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Moq.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Ninject.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Ninject.MockingKernel.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Ninject.MockingKernel.Moq.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Moq.pdb
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Moq.xml
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Ninject.xml
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Ninject.MockingKernel.xml
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\bin\x86\Release\Ninject.MockingKernel.Moq.xml
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\obj\x86\Release\CmdLineWaiterTests.csprojResolveAssemblyReference.cache
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\obj\x86\Release\CmdLineWaiterTests.dll
+C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\CmdLineWaiterTests\obj\x86\Release\CmdLineWaiterTests.pdb
