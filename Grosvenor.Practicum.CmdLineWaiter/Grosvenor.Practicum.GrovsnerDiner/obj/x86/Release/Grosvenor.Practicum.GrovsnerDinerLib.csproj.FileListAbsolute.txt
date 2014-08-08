@@ -2,4 +2,3 @@ C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Prac
 C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\bin\x86\Release\Ninject.dll
 C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\bin\x86\Release\Ninject.xml
 C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\obj\x86\Release\Grosvenor.Practicum.GrovsnerDiner.dll
-C:\Dev\Projects\GIT\TestingRepo\Grosvenor.Practicum.CmdLineWaiter\Grosvenor.Practicum.GrovsnerDiner\obj\x86\Release\Grosvenor.Practicum.GrovsnerDinerLib.csprojResolveAssemblyReference.cache

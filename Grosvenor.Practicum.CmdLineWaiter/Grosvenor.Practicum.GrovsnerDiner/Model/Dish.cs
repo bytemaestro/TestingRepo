@@ -11,8 +11,8 @@ namespace Grosvenor.Practicum.GrovsnerDiner
     /// </summary>
     public enum ServingTime
     {
-        MORNING = 1,
-        NIGHT = 3
+        Morning = 1,
+        Night = 3
     }
 
     /// <summary>
@@ -31,12 +31,14 @@ namespace Grosvenor.Practicum.GrovsnerDiner
     #endregion
 
      /// <summary>
-     /// Base class for all dishes that can be created and served from a diner.
+     /// Base class for all dishes that are usually maintained in a diner. 
+     /// A dish is food prepared and ready for ordering.
      /// </summary>
     public abstract class Dish
     {
-
+        #region Private Members
         private IList<ServingTime> servingTimes = null;
+        #endregion
 
         #region Public Properties
 
@@ -46,9 +48,9 @@ namespace Grosvenor.Practicum.GrovsnerDiner
         public string Name { get; set; }
 
         /// <summary>
-        /// What is the max serverings someone can have per order? 0 = no limit.
+        /// Used as the max portions that can be ordered. Zero 0 = no portion amount limitation. 
         /// </summary>
-        public int MaxServingsPerOrder { get; set; }
+        public int MaxPortionsPerOrder { get; set; }
 
         /// <summary>
         /// Actual Serving Order the dish will be serverd at.
@@ -57,7 +59,7 @@ namespace Grosvenor.Practicum.GrovsnerDiner
 
         /// <summary>
         /// Serving times are the times an dish can be served. current requirements only require one serving time per dish
-        /// but this is a list incase the head chef wants to add more serving times for a dish (i.e. eggs at NIGHT and the MORNING)
+        /// but this is a list incase the head chef wants to add more serving times for a dish (i.e. eggs at Night and the Morning)
         /// </summary>
         public IList<ServingTime> ServingTimes
         {
@@ -74,7 +76,6 @@ namespace Grosvenor.Practicum.GrovsnerDiner
         #endregion 
 
         #region Abstract Members
-
         /// <summary>
         /// DishType returns the type of dish.
         /// </summary>
@@ -90,9 +91,14 @@ namespace Grosvenor.Practicum.GrovsnerDiner
 
         #endregion
 
+        #region Public Methods
+        /// <summary>
+        /// Dish() default public constructor. 
+        /// </summary>
         public Dish() 
         {
             servingTimes = new List<ServingTime>();
         }
+        #endregion
     }
 }

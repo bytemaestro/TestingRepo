@@ -16,60 +16,46 @@ namespace Grosvenor.Practicum.CmdLineWaiter
     {
         static void Main(string[] args)
         {
-            //input/output vars
+            //input vars
             string timeOfDayArg;
             List<string> dishArgs;
-            string output = string.Empty;
-
-            //ninject vars
-            var kernel = new StandardKernel(new LibraryBindings());
-            IFoodServer waiter = kernel.Get<FoodServer>();
-            Order inputedOrder; //order to be displayed
-
+            
 
             //begin
-            Console.WriteLine("Welcome to the CmdLine Waiter!");
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("      The Grovsner Diner ");
+            Console.WriteLine("--------------------------------");
 
-            //get args
+            //get order input args
             if (args.Count() > 0 )
             {
-                //inputed from the command line, the first must be the time of day arg "MORNING" or "NIGHT"
+                //inputed from the command line, the first must be the time of day arg "Morning" or "Night"
                 List<string> cmdLineArgs = args.ToList();
                 timeOfDayArg = cmdLineArgs[0];
-                dishArgs = cmdLineArgs[1].ToString().Split(',').ToList();
-               
+                dishArgs = cmdLineArgs[1].ToString().Split(',').ToList();             
             }
             else
             {
+                
                 //inputed from the console window
-                Console.Write("What is your order input:");
-                var input = Console.ReadLine().Split(',');
+                do 
+                {
+                    Console.Write("Please enter your food order input:");
+                    var input = Console.ReadLine().Split(',');
 
-                timeOfDayArg = input[0].ToString();
-                dishArgs = input.ToList().GetRange(1,input.Count() -1);
+                    timeOfDayArg = input[0].ToString();
+                    dishArgs = input.ToList().GetRange(1, input.Count() - 1);
+                }
+                while (String.IsNullOrEmpty(timeOfDayArg) && dishArgs.Count == 0);
+               
             }
 
-  
-            //call waiter and order
-            inputedOrder = waiter.TakeOrder(timeOfDayArg, dishArgs.ToArray());
+            //display results of input 
+            DisplayServer.DisplayOrder(timeOfDayArg, dishArgs);
 
-
-            //gather output from order
-            foreach (String itemsOut in inputedOrder.GetReciept().OutputAsList())
-            {
-                output = output + itemsOut + ",";
-            }
-
-            //remove last comma
-            output = output.TrimEnd(',');
-
-            Console.WriteLine("Output: " + output);
-            
-            Console.WriteLine("Press any key to end...");
+            //end app
+            Console.WriteLine("\r\nPress any key to exit...");
             Console.ReadKey();
-            
         }
-       
-     
     }
 }

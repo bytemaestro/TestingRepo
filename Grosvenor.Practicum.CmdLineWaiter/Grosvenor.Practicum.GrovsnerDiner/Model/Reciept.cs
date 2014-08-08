@@ -39,10 +39,9 @@ namespace Grosvenor.Practicum.GrovsnerDiner
         }
 
         /// <summary>
-        /// OutputAsList is returns a list of strings for the output of the order (or the reciept , and what and how it should displayed)
+        /// OutputAsList is the output of the order (reciept of order) , and what, where and how it should displayed)
         /// </summary>
-        /// <param name="order"></param>
-        /// <returns></returns>
+        /// <returns>List of strings</returns>
         public List<string> OutputAsList()
         {
             List<string> finalList = new List<string>();
@@ -57,7 +56,8 @@ namespace Grosvenor.Practicum.GrovsnerDiner
                               orderby y.PositionToServe
                               select new {DisplayName = o.Count > 1 ? o.DishName + "(x" + o.Count.ToString() + ")" : o.DishName, Count = o.Count}).Distinct();
 
-            //format like the requirements state OrderTimeOfDay, Dish serving order (i.e. "MORNING","eggs","toast","coffee(3x)")
+            //format like the requirements state OrderTimeOfDay, Dish serving order (i.e. "Morning","eggs","toast","coffee(3x)")
+            //Uncomment following line, if icluding ServingTime in output. i.e. (Output: Eggs, Coffee(x2) or Output: Morning, Eggs, Coffee(x2)
            // finalList.Add(TheOrder.TimeOfDay.ToString());
             for (int i = 0; i < TheOrder.OutputOrderResults.Count(); i++)
             {
@@ -70,6 +70,7 @@ namespace Grosvenor.Practicum.GrovsnerDiner
                 }
                 else
                 {
+                    //displaying the word error in the output returned. then stop fufilling the order if error occurs
                     finalList.Add("Error");
                     break;
                 }

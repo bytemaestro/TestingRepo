@@ -15,20 +15,32 @@ namespace Grosvenor.Practicum.GrovsnerDiner
         {
           
         }
+        /// <summary>
+        /// TakeOrder is the main method that inputs the string Food order, and instances a new Order object
+        /// </summary>
+        /// <param name="servingTime">
+        /// Time of day that certain dishes are categorized by. (Morning (Breakfast), Night (Dinner), etc.
+        /// </param>
+        /// <param name="dishes">
+        /// A comma delimited string of numbers, that uniquely represent a dish. (i.e.Night,1,2,2,4 represents 1=Steak, 2=Potatos(x2 portions)(#2), 4=Cake)
+        /// </param>
+        /// <returns>Order</returns>
         public Order TakeOrder (string servingTime, string[] dishes)
         {
             Order order = new Order();
 
-            servingTime = servingTime.ToUpper();
             try
             {
                 ServingTime orderTime;
 
                 //convert string input args for an order to instance a new Order
-                if (Enum.TryParse<ServingTime>(servingTime, out orderTime))
+                if (Enum.TryParse<ServingTime>(servingTime, true, out  orderTime))
                 {
                     order.TimeOfDay = orderTime;
-                    //order.OutputOrderResults.Add(0, order.TimeOfDay.ToString()); //initialize the order results step comparer
+                    /* Uncomment following line, to add the Serving Time to the output 
+                       (i.e. Morning, Eggs, Toast. Currently just outputing Eggs, Toast ...etc...)
+                    //order.OutputOrderResults.Add(0, order.TimeOfDay.ToString());
+                    */
                 }
                 else
                 {
@@ -38,7 +50,7 @@ namespace Grosvenor.Practicum.GrovsnerDiner
                         orderTimeError += times + ", ";
                     }
                     //strip last comma
-                    orderTimeError.TrimEnd(',');
+                    orderTimeError = orderTimeError.TrimEnd(',',' ');
                     order.Errors.Add(orderTimeError);
                 }
 
@@ -48,7 +60,7 @@ namespace Grosvenor.Practicum.GrovsnerDiner
                     ServingPosition servingPos = (ServingPosition)Enum.Parse(typeof(ServingPosition),posEntry);
                     Dish dishToAdd;
 
-                    dishToAdd = this.TheDinerService.GetDishByTimeAndPosition(order.TimeOfDay, servingPos);
+                    dishToAdd = this.TheDinerService.GetDishByServingTimeAndPosition(order.TimeOfDay, servingPos);
                     if (dishToAdd != null)
                     {
                         //check how many times the dish can be ordered, by the MaxOrderProperty
@@ -58,32 +70,37 @@ namespace Grosvenor.Practicum.GrovsnerDiner
                                              
                                              select x).ToList();
 
-                        if (dishToAdd.MaxServingsPerOrder == 0 || currentDishes.Count < dishToAdd.MaxServingsPerOrder)
+                        if ( dishToAdd.MaxPortionsPerOrder == 0 || currentDishes.Count < dishToAdd.MaxPortionsPerOrder)
                         {
                             //unlimted so just add the dish to the order
                             order.Dishes.Add(dishToAdd);
                             if (!order.OutputOrderResults.ContainsKey((int)servingPos))
                             {
                                 order.OutputOrderResults.Add((int)servingPos, "ok");
-                            }
-                                
+                            }                          
                         }
                         else
                         {
-                            if (order.OutputOrderResults.ContainsKey((int)servingPos+1))
+                            if (order.OutputOrderResults.ContainsKey((int)servingPos + 1))
                             {
                                 order.OutputOrderResults.Remove((int)servingPos);
                             }
-                            //this will be used to stop display at display position
-                            order.OutputOrderResults.Add((int)servingPos+1, "error"); 
-                            break; //stop further processing/ordering if an error occurs
+                            //this will be used to stop display at display position 
+                            order.OutputOrderResults.Add((int)servingPos + 1, "error");
+                            order.Errors.Add("Error: Dish '" + dishToAdd.Name
+                                                + "' has reached its max order portion amount of '"
+                                                + dishToAdd.MaxPortionsPerOrder + "'.");
+                            break; //stop further processing/ordering 
                         }
                     }
                     else
                     {
-                        //no dish for the serving time and serving order
-                        order.OutputOrderResults.Add((int)servingPos, "error"); //this will be used to stop display
-                        break; //stop further processing/ordering if an error occurs
+                        //ordering error, no dish for the serving time and serving position
+                        order.OutputOrderResults.Add((int)servingPos, "error"); //this will be used to stop display and processing
+                        order.Errors.Add("Error: 'Dish Not Found' For given order parameters: " 
+                                                + orderTime.ToString() 
+                                                + " and dish#" + ((int)servingPos).ToString());
+                        break; //stop further processing/ordering 
                     }
 
                     dishToAdd = null;

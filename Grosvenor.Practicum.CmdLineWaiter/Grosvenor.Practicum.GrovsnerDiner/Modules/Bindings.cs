@@ -14,7 +14,7 @@ namespace Grosvenor.Practicum.GrovsnerDiner
         {
 
             Kernel.Bind<IRepository<Dish>>().To<Repository<Dish>>();
-            Kernel.Bind<IDinerService>().To<DinerService>().InSingletonScope();
+            Kernel.Bind<IDinerService>().To<DinerService>();
             Kernel.Bind<IFoodServer>().To<FoodServer>();
         }
     }

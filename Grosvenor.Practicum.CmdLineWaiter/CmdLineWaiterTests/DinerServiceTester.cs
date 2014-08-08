@@ -24,7 +24,6 @@ namespace CmdLineWaiterTests
         public void TestDinerServiceSetup()
         {
             var kernel = new Ninject.MockingKernel.Moq.MoqMockingKernel();
-            kernel.Bind<IRepository<Dish>>().To<Repository<Dish>>();
             kernel.Bind<DinerService>().ToMock();
             var mock = kernel.GetMock<DinerService>();
           
@@ -32,18 +31,17 @@ namespace CmdLineWaiterTests
             Assert.IsTrue(mock.Object.GetDiner().Name.ToUpper() == DINER_NAME);
 
             //check all 7 dishes had been added
-            Assert.IsTrue(mock.Object.GetCompleteMenu().Count == 7);
+            Assert.IsTrue(mock.Object.GetAllDishes().Count == 7);
 
         }
 
         /// <summary>
-        /// Test Getting MORNING Dishes test getting the only known possible MORNING dishes
+        /// Test Getting Morning Dishes test getting the only known possible Morning dishes
         /// </summary>
         [TestMethod]
         public void TestGettingBreakfastDishes()
         {
             var kernel = new Ninject.MockingKernel.Moq.MoqMockingKernel();
-            kernel.Bind<IRepository<Dish>>().To<Repository<Dish>>();
             kernel.Bind<DinerService>().ToMock();
             var mock = kernel.GetMock<DinerService>();
 
@@ -52,51 +50,50 @@ namespace CmdLineWaiterTests
         }
 
         /// <summary>
-        /// Test Getting D Dishes test getting the only known possible MORNING dishes
+        /// Test Getting D Dishes test getting the only known possible Morning dishes
         /// </summary>
         [TestMethod]
         public void TestGettingDinnerDishes()
         {
-            var kernel = new Ninject.MockingKernel.Moq.MoqMockingKernel();
-            kernel.Bind<IRepository<Dish>>().To<Repository<Dish>>();
+            var kernel = new Ninject.MockingKernel.Moq.MoqMockingKernel();           
             kernel.Bind<DinerService>().ToMock();
             var mock = kernel.GetMock<DinerService>();
 
             Assert.IsTrue(mock.Object.GetDinnerMenu().Count == 4);
-
         }
 
         /// <summary>
-        /// Test that for each Serving Time (MORNING, NIGHT). There is only one dish in the collection
+        /// Test that for each Serving Time (Morning, Night). There is only one dish in the collection
         /// that is unique in Serving Time and Position
         /// </summary>
         [TestMethod]
         public void TestDishesServingTimeAndPositionAreUnique()
         {
             var kernel = new Ninject.MockingKernel.Moq.MoqMockingKernel();
-            //kernel.Bind<IRepository<Dish>>().To<Repository<Dish>>();
             kernel.Bind<DinerService>().ToMock();
             var mock = kernel.GetMock<DinerService>();
 
             bool IsDupeError = false; // No Duplicate Key Error
-            Dictionary<ServingPosition, Dish> MORNINGDict = new Dictionary<ServingPosition, Dish>();
+            Dictionary<ServingPosition, Dish> morningDict = new Dictionary<ServingPosition, Dish>();
             Dictionary<ServingPosition, Dish> nightDict = new Dictionary<ServingPosition, Dish>(); 
 
             try
             {
-                //try MORNING dishes 
+                //try Morning dishes 
                 foreach (Dish dish in mock.Object.GetBreakfastMenu())
                 {
                     //add to dictionary, if key violat
-                    MORNINGDict.Add(dish.DefaultPositionToServe, dish);
+                    morningDict.Add(dish.DefaultPositionToServe, dish);
                 }
 
-                //try NIGHT dishes
+                //try Night dishes
                 foreach (Dish dish in mock.Object.GetDinnerMenu())
                 {
                     //add to dictionary, if key violat
                     nightDict.Add(dish.DefaultPositionToServe, dish);
                 }
+
+                //mock.Object.GetCompleteMenu
             }
             catch (ArgumentException)
             {

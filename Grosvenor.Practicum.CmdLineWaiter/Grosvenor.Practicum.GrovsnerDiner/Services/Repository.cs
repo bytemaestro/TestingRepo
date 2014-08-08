@@ -21,41 +21,41 @@ namespace Grosvenor.Practicum.GrovsnerDiner
                 List<Dish> dishes = new List<Dish>();
                 Dish dish;
 
-                //---MORNING Dishes---
+                //---Morning Dishes---
                 //1. entree / eggs
-                dish = new Entree() { Name = "Eggs", PositionToServe = ServingPosition.First, MaxServingsPerOrder = 1 };
-                dish.ServingTimes.Add(ServingTime.MORNING);
+                dish = new Entree() { Name = "Eggs", PositionToServe = ServingPosition.First, MaxPortionsPerOrder = 1 };
+                dish.ServingTimes.Add(ServingTime.Morning);
                 dishes.Add(dish);
 
                 //2. side / toast
-                dish = new Side() { Name = "Toast", PositionToServe = ServingPosition.Second, MaxServingsPerOrder = 1 };
-                dish.ServingTimes.Add(ServingTime.MORNING);
+                dish = new Side() { Name = "Toast", PositionToServe = ServingPosition.Second, MaxPortionsPerOrder = 1 };
+                dish.ServingTimes.Add(ServingTime.Morning);
                 dishes.Add(dish);
 
                 //3. drink / coffee
-                dish = new Drink() { Name = "Coffee", PositionToServe = ServingPosition.Third, MaxServingsPerOrder = 0 };
-                dish.ServingTimes.Add(ServingTime.MORNING);
+                dish = new Drink() { Name = "Coffee", PositionToServe = ServingPosition.Third, MaxPortionsPerOrder = 0 };
+                dish.ServingTimes.Add(ServingTime.Morning);
                 dishes.Add(dish);
 
-                //---NIGHT Dishes----
+                //---Night Dishes----
                 //1. entree / steak
-                dish = new Entree() { Name = "Steak", PositionToServe = ServingPosition.First, MaxServingsPerOrder = 1 };
-                dish.ServingTimes.Add(ServingTime.NIGHT);
+                dish = new Entree() { Name = "Steak", PositionToServe = ServingPosition.First, MaxPortionsPerOrder = 1 };
+                dish.ServingTimes.Add(ServingTime.Night);
                 dishes.Add(dish);
 
                 //2. side / potatos
-                dish = new Side() { Name = "Potatos", PositionToServe = ServingPosition.Second, MaxServingsPerOrder = 0 };
-                dish.ServingTimes.Add(ServingTime.NIGHT);
+                dish = new Side() { Name = "Potatos", PositionToServe = ServingPosition.Second, MaxPortionsPerOrder = 0 };
+                dish.ServingTimes.Add(ServingTime.Night);
                 dishes.Add(dish);
 
                 //3. drink / wine
-                dish = new Drink() { Name = "Wine", PositionToServe = ServingPosition.Third, MaxServingsPerOrder = 1 };
-                dish.ServingTimes.Add(ServingTime.NIGHT);
+                dish = new Drink() { Name = "Wine", PositionToServe = ServingPosition.Third, MaxPortionsPerOrder = 1 };
+                dish.ServingTimes.Add(ServingTime.Night);
                 dishes.Add(dish);
 
                 //4. desert / cake
-                dish = new Desert() { Name = "Cake", PositionToServe = ServingPosition.Fourth, MaxServingsPerOrder = 1 };
-                dish.ServingTimes.Add(ServingTime.NIGHT);
+                dish = new Desert() { Name = "Cake", PositionToServe = ServingPosition.Fourth, MaxPortionsPerOrder = 1 };
+                dish.ServingTimes.Add(ServingTime.Night);
                 dishes.Add(dish);
 
                 returnList = (List<T>)dishes.Cast<Dish>().ToList().AsEnumerable();

@@ -19,7 +19,7 @@ namespace CmdLineWaiterTests
             var kernel = new StandardKernel(new LibraryBindings());
             var mock = kernel.Get<FoodServer>();
 
-            Order order = mock.TakeOrder(ServingTime.MORNING.ToString(), new string[] { "1", "2", "3" });
+            Order order = mock.TakeOrder(ServingTime.Morning.ToString(), new string[] { "1", "2", "3" });
 
             Assert.IsNotNull(order);
 
@@ -32,7 +32,7 @@ namespace CmdLineWaiterTests
             var kernel = new StandardKernel(new LibraryBindings());
             var mock = kernel.Get<FoodServer>();
             StringBuilder orderOutput = new StringBuilder();
-            Order order = mock.TakeOrder(ServingTime.MORNING.ToString(), new string[] { "1", "2", "3" });
+            Order order = mock.TakeOrder(ServingTime.Morning.ToString(), new string[] { "1", "2", "3" });
 
             var results = order.GetReciept().OutputAsList();
 
@@ -49,7 +49,7 @@ namespace CmdLineWaiterTests
             var kernel = new StandardKernel(new LibraryBindings());
             var mock = kernel.Get<FoodServer>();
             StringBuilder orderOutput = new StringBuilder();
-            Order order = mock.TakeOrder(ServingTime.MORNING.ToString(), new string[] { "1", "2", "3","3" });
+            Order order = mock.TakeOrder(ServingTime.Morning.ToString(), new string[] { "1", "2", "3","3" });
 
             var results = order.GetReciept().OutputAsList();
 
@@ -67,7 +67,7 @@ namespace CmdLineWaiterTests
             var kernel = new StandardKernel(new LibraryBindings());
             var mock = kernel.Get<FoodServer>();
             StringBuilder orderOutput = new StringBuilder();
-            Order order = mock.TakeOrder(ServingTime.MORNING.ToString(), new string[] { "1", "2", "3", "4" });
+            Order order = mock.TakeOrder(ServingTime.Morning.ToString(), new string[] { "1", "2", "3", "4" });
 
             var results = order.GetReciept().OutputAsList();
 
@@ -85,7 +85,7 @@ namespace CmdLineWaiterTests
             var kernel = new StandardKernel(new LibraryBindings());
             var mock = kernel.Get<FoodServer>();
             StringBuilder orderOutput = new StringBuilder();
-            Order order = mock.TakeOrder(ServingTime.MORNING.ToString(), new string[] { "3", "3", "3", "1", "2" });
+            Order order = mock.TakeOrder(ServingTime.Morning.ToString(), new string[] { "3", "3", "3", "1", "2" });
 
             var results = order.GetReciept().OutputAsList();
 
@@ -101,7 +101,7 @@ namespace CmdLineWaiterTests
             var kernel = new StandardKernel(new LibraryBindings());
             var mock = kernel.Get<FoodServer>();
             StringBuilder orderOutput = new StringBuilder();
-            Order order = mock.TakeOrder(ServingTime.NIGHT.ToString(), new string[] { "1", "2", "3", "4" });
+            Order order = mock.TakeOrder(ServingTime.Night.ToString(), new string[] { "1", "2", "3", "4" });
 
             var results = order.GetReciept().OutputAsList();
 
@@ -117,7 +117,7 @@ namespace CmdLineWaiterTests
             var kernel = new StandardKernel(new LibraryBindings());
             var mock = kernel.Get<FoodServer>();
             StringBuilder orderOutput = new StringBuilder();
-            Order order = mock.TakeOrder(ServingTime.NIGHT.ToString(), new string[] { "1", "2", "3", "4","2","2","2","2" });
+            Order order = mock.TakeOrder(ServingTime.Night.ToString(), new string[] { "1", "2", "3", "4","2","2","2","2" });
 
             var results = order.GetReciept().OutputAsList();
 
@@ -133,7 +133,7 @@ namespace CmdLineWaiterTests
             var kernel = new StandardKernel(new LibraryBindings());
             var mock = kernel.Get<FoodServer>();
             StringBuilder orderOutput = new StringBuilder();
-            Order order = mock.TakeOrder(ServingTime.NIGHT.ToString(), new string[] {  "2", "2", "2", "2","1", "2", "3", "4" });
+            Order order = mock.TakeOrder(ServingTime.Night.ToString(), new string[] {  "2", "2", "2", "2","1", "2", "3", "4" });
 
             var results = order.GetReciept().OutputAsList();
 
